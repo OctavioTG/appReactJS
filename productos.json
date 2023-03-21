@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nombre": "KEN-L",
+        "categoria": "perro",
+        "precio": 7000,
+        "detalles": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, sint, iste sequi eveniet debitis id suscipit magnam nulla quibusdam tempore porro error", 
+        "img": "./imgs/kenL.png"
+    },
+    {
+        "id": 2,
+        "nombre": "EXCELLENT",
+        "categoria": "perro",
+        "precio": 8200,
+        "detalles": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, sint, iste sequi eveniet debitis id suscipit magnam nulla quibusdam tempore porro error", 
+        "img": "./imgs/excellent.png"
+    },
+    {
+        "id": 3,
+        "nombre": "GATI",
+        "categoria": "gato",
+        "precio": 7500,
+        "detalles": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, sint, iste sequi eveniet debitis id suscipit magnam nulla quibusdam tempore porro error", 
+        "img": "./imgs/gati.png"
+    }
+]

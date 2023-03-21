@@ -1,36 +1,31 @@
-import React from 'react'
-import CartWidget from './CartWidget'
-import {Container, Navbar, Nav} from 'react-bootstrap'
-
+import React from "react";
+import CartWidget from "./CartWidget";
+import { Container, Navbar, Nav } from "react-bootstrap";
 
 function NavBar() {
-
-  let categorias = ["Balanceados", "Accesorios", "Productos de Limpieza","Otros"]
-
   return (
     <>
       <Navbar bg="primary" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">
-            <img 
+          <Navbar.Brand href="#">
+            <img
               src="../imgs/logoBlack.png"
               width="50"
               height="50"
-              className="d-inline-block align-center m-3"/>
+              className="d-inline-block align-center m-3"
+            />
             Espora Pets
           </Navbar.Brand>
           <Nav className="me-auto">
-          <ul className='d-flex'>
-            {categorias.map((cat, index) => (
-              <li key={index}><Nav.Link href="#">{cat}</Nav.Link></li>
-            ))}
-          </ul>
+                <Nav.Link href="#">Balanceados</Nav.Link>
+                <Nav.Link href="#">Accesorios</Nav.Link>
+                <Nav.Link href="#">Productos de Limpieza</Nav.Link>
           </Nav>
-          <CartWidget/>
+          <CartWidget />
         </Container>
       </Navbar>
     </>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;
