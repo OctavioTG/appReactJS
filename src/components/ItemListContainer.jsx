@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
+import ItemDetailContainer from "./ItemDetailContainer";
 
 function ItemListContainer({ greeting }) {
   async function getItmes() {
@@ -16,7 +17,7 @@ function ItemListContainer({ greeting }) {
 
   return (
     <>
-      <ItemList prod={product}/>
+      <ItemList products={product}/>
     </>
   );
 }
