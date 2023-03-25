@@ -5,7 +5,8 @@
         "categoria": "perro",
         "precio": 7000,
         "detalles": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, sint, iste sequi eveniet debitis id suscipit magnam nulla quibusdam tempore porro error", 
-        "img": "./imgs/kenL.png"
+        "img": "./imgs/kenL.png",
+        "stock": 5
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "categoria": "perro",
         "precio": 8200,
         "detalles": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, sint, iste sequi eveniet debitis id suscipit magnam nulla quibusdam tempore porro error", 
-        "img": "./imgs/excellent.png"
+        "img": "./imgs/excellent.png",
+        "stock": 3
     },
     {
         "id": 3,
@@ -21,6 +23,7 @@
         "categoria": "gato",
         "precio": 7500,
         "detalles": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, sint, iste sequi eveniet debitis id suscipit magnam nulla quibusdam tempore porro error", 
-        "img": "./imgs/gati.png"
+        "img": "./imgs/gati.png",
+        "stock": 4
     }
 ]

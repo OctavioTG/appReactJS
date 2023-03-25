@@ -1,9 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
-import ItemDetailContainer from "./ItemDetailContainer";
 
-function ItemListContainer({ greeting }) {
+function ItemListContainer({}) {
   async function getItmes() {
     const response = await fetch("./productos.json");
     const data = await response.json();
@@ -17,7 +16,7 @@ function ItemListContainer({ greeting }) {
 
   return (
     <>
-      <ItemList products={product}/>
+      <ItemList products={product} />
     </>
   );
 }
