@@ -6,8 +6,7 @@ function ItemCount({ stock }) {
   const [count, setCount] = useState(1);
 
   function sumar() {
-   if (count < stock){ //No Funciona!
-    //if (count < 5) {
+  if (count < stock){
       setCount(count + 1);
     }
   }

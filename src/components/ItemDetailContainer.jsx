@@ -1,7 +1,6 @@
 import React from "react";
 import ItemDetail from "./ItemDetail";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 
 function ItemDetailContainer({}) {
   function loadProd() {
@@ -14,7 +13,7 @@ function ItemDetailContainer({}) {
   
   async function getItmes() {
     const response = await fetch("../productos.json");
-    //const delay = await loadProd();
+    const delay = await loadProd();
     const data = await response.json();
     return data;
   }
@@ -26,19 +25,6 @@ function ItemDetailContainer({}) {
   
   return (
     <>
-    {/* {id ? <ItemDetail product={prodFilter}/> : <ItemDetail product={product}/>} */}
-      {/* {product.map((prod) => {
-        return (
-          <ItemDetail
-            key={prod.id}
-            img={prod.img}
-            nombre={prod.nombre}
-            precio={prod.precio}
-            detalles={prod.detalles}
-            stock={prod.stock}
-          />
-        );
-      })} */}
       <ItemDetail product={product}/>
     </>
   );
