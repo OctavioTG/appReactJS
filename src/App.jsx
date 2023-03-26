@@ -4,6 +4,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer";
 import NavBar from "./components/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Cart from "./components/Cart";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/categoria/:categoria" element={<ItemListContainer/>}/>
         <Route exact path="/detail" element={<ItemDetailContainer/>}/>
         <Route exact path="/detail/:id" element={<ItemDetailContainer/>}/>
+        <Route exact path="/cart" element={<Cart/>}/>
       </Routes>
     </BrowserRouter>
   );
