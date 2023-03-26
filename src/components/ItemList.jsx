@@ -4,6 +4,7 @@ import Item from "./Item";
 function ItemList({ products }) {
   return (
     <>
+    <div className="d-flex flex-wrap">
       {products.map((prod) => {
         return (
           <Item
@@ -16,6 +17,7 @@ function ItemList({ products }) {
           />
         );
       })}
+      </div>
     </>
   );
 }

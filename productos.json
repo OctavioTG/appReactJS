@@ -1,29 +1,56 @@
 [
-    {
-        "id": 1,
-        "nombre": "KEN-L",
-        "categoria": "perro",
-        "precio": 7000,
-        "detalles": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, sint, iste sequi eveniet debitis id suscipit magnam nulla quibusdam tempore porro error", 
-        "img": "./imgs/kenL.png",
-        "stock": 5
-    },
-    {
-        "id": 2,
-        "nombre": "EXCELLENT",
-        "categoria": "perro",
-        "precio": 8200,
-        "detalles": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, sint, iste sequi eveniet debitis id suscipit magnam nulla quibusdam tempore porro error", 
-        "img": "./imgs/excellent.png",
-        "stock": 3
-    },
-    {
-        "id": 3,
-        "nombre": "GATI",
-        "categoria": "gato",
-        "precio": 7500,
-        "detalles": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, sint, iste sequi eveniet debitis id suscipit magnam nulla quibusdam tempore porro error", 
-        "img": "./imgs/gati.png",
-        "stock": 4
-    }
+  {
+    "id": 1,
+    "nombre": "KEN-L",
+    "categoria": "balanceados",
+    "precio": 7000,
+    "detalles": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, sint, iste sequi eveniet debitis id suscipit magnam nulla quibusdam tempore porro error",
+    "img": "../imgs/kenL.png",
+    "stock": 5
+  },
+  {
+    "id": 2,
+    "nombre": "EXCELLENT",
+    "categoria": "balanceados",
+    "precio": 8200,
+    "detalles": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, sint, iste sequi eveniet debitis id suscipit magnam nulla quibusdam tempore porro error",
+    "img": "../imgs/excellent.png",
+    "stock": 3
+  },
+  {
+    "id": 3,
+    "nombre": "GATI",
+    "categoria": "balanceados",
+    "precio": 7500,
+    "detalles": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, sint, iste sequi eveniet debitis id suscipit magnam nulla quibusdam tempore porro error",
+    "img": "../imgs/gati.png",
+    "stock": 4
+  },
+  {
+    "id": 4,
+    "nombre": "COLLAR",
+    "categoria": "accesorios",
+    "precio": 1200,
+    "detalles": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, sint, iste sequi eveniet debitis id suscipit magnam nulla quibusdam tempore porro error",
+    "img": "../imgs/collar.jpg",
+    "stock": 6
+  },
+  {
+    "id": 5,
+    "nombre": "COMEDERO",
+    "categoria": "accesorios",
+    "precio": 900,
+    "detalles": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, sint, iste sequi eveniet debitis id suscipit magnam nulla quibusdam tempore porro error",
+    "img": "../imgs/comedero.jpg",
+    "stock": 5
+  },
+  {
+    "id": 6,
+    "nombre": "BANDEJA SANITARIA",
+    "categoria": "accesorios",
+    "precio": 700,
+    "detalles": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, sint, iste sequi eveniet debitis id suscipit magnam nulla quibusdam tempore porro error",
+    "img": "../imgs/bandeja.jpg",
+    "stock": 4
+  }
 ]

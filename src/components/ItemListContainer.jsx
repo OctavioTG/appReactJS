@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
+import { useParams } from "react-router-dom";
 
 function ItemListContainer({}) {
   async function getItmes() {
@@ -13,10 +14,11 @@ function ItemListContainer({}) {
   useEffect(() => {
     getItmes().then((product) => setProduct(product));
   }, []);
-
+  const { categoria } = useParams();
+  const catFilter = product.filter((prod) => prod.categoria == categoria);
   return (
     <>
-      <ItemList products={product} />
+      {categoria ? (<ItemList products={catFilter} />) : (<ItemList products={product} />)}
     </>
   );
 }

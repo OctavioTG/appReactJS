@@ -5,6 +5,7 @@ import { Link, useParams } from "react-router-dom";
 function Item({ nombre, precio, img, detalles, id }) {
   return (
     <>
+    <div className="m-3">
       <Card style={{ width: "18rem" }}>
         <Card.Img variant="top" src={img} />
         <Card.Body>
@@ -16,6 +17,7 @@ function Item({ nombre, precio, img, detalles, id }) {
           </Link>
         </Card.Body>
       </Card>
+      </div>
     </>
   );
 }
