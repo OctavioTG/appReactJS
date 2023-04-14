@@ -3,17 +3,17 @@ import ItemDetail from "./ItemDetail";
 import { useState, useEffect } from "react";
 
 function ItemDetailContainer({}) {
-  function loadProd() {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(product);
-      }, 2000);
-    });
-  }
+  // function loadProd() {
+  //   return new Promise((resolve) => {
+  //     setTimeout(() => {
+  //       resolve(product);
+  //     }, 2000);
+  //   });
+  // }
   
   async function getItmes() {
     const response = await fetch("../productos.json");
-    const delay = await loadProd();
+    // const delay = await loadProd();
     const data = await response.json();
     return data;
   }
