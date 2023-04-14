@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContextProvider";
 
 function CartWidget() {
-  // const {cart, setCart} = useContext(CartContext)
-  // console.log(cart);
+  const [cart] = useContext(CartContext)
+
   return (
     <>
       <Link to={"/cart"}>
@@ -12,7 +12,7 @@ function CartWidget() {
           shopping_cart
         </span>
       </Link>
-      {/* <p>{cart}</p> */}
+      <p>{cart.length}</p>
     </>
   );
 }

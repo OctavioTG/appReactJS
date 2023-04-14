@@ -26,17 +26,10 @@ function Cart() {
     return resultado;
   }
 
-  const getTotal = () => {
+  function getTotal() {
     let subtotales = cart.map((item) => item.count * item.item.precio);
-    console.log(subtotales);
     return sumar(subtotales);
   };
-
-  function itemQuantity() {
-    let q = cart.map((item) => item.count);
-    let result = sumar(q);
-    return result;
-  }
 
   return (
     <>
@@ -48,7 +41,6 @@ function Cart() {
               <Card.Img variant="top" src={item.img} />
               <Card.Body>
                 <Card.Title>{item.nombre}</Card.Title>
-                {/* <Card.Text>{detalles}</Card.Text> */}
                 <p>Unidades: {count}</p>
                 <p>SubTotal: ${getSubtotal(count, item.precio)}</p>
                 <Button onClick={() => removeItem(item.id)}>Eliminar</Button>
@@ -58,8 +50,7 @@ function Cart() {
         ))}
       </div>
       <div className="divCart border m-3 d-flex">
-        <h4>TOTAL:</h4>
-        <p>${getTotal()}</p>
+        <h4>TOTAL: ${getTotal()}</h4>
       </div>
     </>
   );
