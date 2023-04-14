@@ -6,10 +6,10 @@ function Cart() {
   const [cart, setCart] = useContext(CartContext);
   console.log(cart);
 
-  const removeItem = (id) => {
+  function removeItem(id) {
     const newItem = cart.filter(({ item }) => item.id !== id);
     setCart(newItem);
-  };
+  }
 
   // function clearCart() {setCart([])}
 
@@ -26,10 +26,11 @@ function Cart() {
     return resultado;
   }
 
-  function getTotal() {
-    let subtotales = cart.map((item) => item.count * item.item.price);
+  const getTotal = () => {
+    let subtotales = cart.map((item) => item.count * item.item.precio);
+    console.log(subtotales);
     return sumar(subtotales);
-  }
+  };
 
   function itemQuantity() {
     let q = cart.map((item) => item.count);
@@ -50,15 +51,15 @@ function Cart() {
                 {/* <Card.Text>{detalles}</Card.Text> */}
                 <p>Unidades: {count}</p>
                 <p>SubTotal: ${getSubtotal(count, item.precio)}</p>
-                
                 <Button onClick={() => removeItem(item.id)}>Eliminar</Button>
               </Card.Body>
             </Card>
           </div>
         ))}
       </div>
-      <div className="divCart border m-3">
+      <div className="divCart border m-3 d-flex">
         <h4>TOTAL:</h4>
+        <p>${getTotal()}</p>
       </div>
     </>
   );
