@@ -33,7 +33,7 @@ function Cart() {
 
   return (
     <>
-      <div className="divCart border m-3 d-flex flex-wrap">
+      <div className="border m-3 d-flex flex-wrap">
         <h4 className="d-flex justify-content-center">PRODUCTOS:</h4>
         {cart.map(({ item, count }) => (
           <div className="m-3" key={item.id}>

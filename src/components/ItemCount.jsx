@@ -44,4 +44,3 @@ function ItemCount({ item }) {
 }
 
 export default ItemCount;
-//onClick={() => setCount((count) => (count = 1))}
