@@ -1,8 +1,8 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
-import { Link, useParams } from "react-router-dom";
+import { Link} from "react-router-dom";
 
-function Item({ nombre, precio, img, detalles, id }) {
+function Item({ nombre, precio, img, id}) {
   return (
     <>
     <div className="m-3">

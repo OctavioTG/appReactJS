@@ -1,15 +1,15 @@
 import React from "react";
-import { Button, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import ItemCount from "./ItemCount";
 
-function ItemDetail({ product }) {
-  const { id } = useParams();
-  const prodFilter = product.filter((prod) => prod.id == id);
+function ItemDetail({ prod, id }) {
+  // const { id } = useParams();
+  // const prodFilter = product.filter((prod) => prod.id == id);
   return (
     <>
-      {prodFilter.map((prod) => (
-        <div key={prod.id}>
+      {/* {prodFilter.map((prod) => ( */}
+        <div key={id}>
           <Card style={{ width: "18rem" }}>
             <Card.Img variant="top" src={prod.img} />
             <Card.Body>
@@ -21,7 +21,7 @@ function ItemDetail({ product }) {
             </Card.Body>
           </Card>
         </div>
-      ))}
+      {/* ))} */}
     </>
   );
 }

@@ -11,7 +11,9 @@ function Cart() {
     setCart(newItem);
   }
 
-  // function clearCart() {setCart([])}
+  function clearCart() {
+    setCart([]);
+  }
 
   function getSubtotal(count, precio) {
     let result = count * precio;
@@ -29,12 +31,13 @@ function Cart() {
   function getTotal() {
     let subtotales = cart.map((item) => item.count * item.item.precio);
     return sumar(subtotales);
-  };
+  }
 
   return (
     <>
       <div className="border m-3 d-flex flex-wrap">
         <h4 className="d-flex justify-content-center">PRODUCTOS:</h4>
+
         {cart.map(({ item, count }) => (
           <div className="m-3" key={item.id}>
             <Card style={{ width: "18rem" }}>
@@ -48,6 +51,10 @@ function Cart() {
             </Card>
           </div>
         ))}
+        <div>
+        <Button className="m-3" onClick={clearCart}>Vaciar Carrito</Button>
+        <Button>CHECKOUT</Button>
+        </div>
       </div>
       <div className="divCart border m-3 d-flex">
         <h4>TOTAL: ${getTotal()}</h4>
