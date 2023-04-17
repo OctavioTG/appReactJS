@@ -52,10 +52,12 @@ function Cart() {
           </div>
         ))}
         <div>
-        <Button className="m-3" onClick={clearCart}>Vaciar Carrito</Button>
-        <Link to={"/checkout"}>
-        <Button>CHECKOUT</Button>
-        </Link>
+          <Button className="m-3" onClick={clearCart}>
+            Vaciar Carrito
+          </Button>
+          <Link to={"/checkout"}>
+            <Button>CHECKOUT</Button>
+          </Link>
         </div>
       </div>
       <div className="divCart border m-3 d-flex">

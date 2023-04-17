@@ -6,7 +6,7 @@ import { CartContext } from "../context/CartContextProvider";
 function ItemCount({ item }) {
   const [cart, setCart] = useContext(CartContext);
   const [count, setCount] = useState(1);
-  
+
   function sumar() {
     if (count < item.stock) {
       setCount(count + 1);
@@ -28,7 +28,7 @@ function ItemCount({ item }) {
     } else {
       setCart([...cart, { item, count }]);
     }
-  };
+  }
 
   return (
     <>
@@ -36,11 +36,12 @@ function ItemCount({ item }) {
         <Button onClick={sumar}>+</Button>
         <p className="m-1">{count}</p>
         <Button onClick={restar}>-</Button>
-        <Button className="ms-1" onClick={addItem}>Añadir al Carrito</Button>
+        <Button className="ms-1" onClick={addItem}>
+          Añadir al Carrito
+        </Button>
       </div>
     </>
   );
-
 }
 
 export default ItemCount;

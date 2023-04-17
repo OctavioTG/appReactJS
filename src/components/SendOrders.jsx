@@ -22,7 +22,6 @@ function SendOrders() {
     email,
   };
 
-
   const ordersCollection = collection(db, "order");
 
   return (
