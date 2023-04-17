@@ -4,8 +4,6 @@ import { useParams } from "react-router-dom";
 import ItemCount from "./ItemCount";
 
 function ItemDetail({ prod, id }) {
-  // const { id } = useParams();
-  // const prodFilter = product.filter((prod) => prod.id == id);
   return (
     <>
       {/* {prodFilter.map((prod) => ( */}
@@ -21,7 +19,6 @@ function ItemDetail({ prod, id }) {
             </Card.Body>
           </Card>
         </div>
-      {/* ))} */}
     </>
   );
 }

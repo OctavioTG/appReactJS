@@ -10,7 +10,6 @@ function Item({ nombre, precio, img, id}) {
         <Card.Img variant="top" src={img} />
         <Card.Body>
           <Card.Title>{nombre}</Card.Title>
-          {/* <Card.Text>{detalles}</Card.Text> */}
           <p>${precio}</p>
           <Link to={`/detail/${id}`}>
           <Button variant="primary">Detalles</Button>

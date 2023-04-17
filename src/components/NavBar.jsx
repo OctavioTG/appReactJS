@@ -26,7 +26,6 @@ function NavBar() {
             <Link to={`/categoria/${"accesorios"}`}>
               <Nav.Link href="/categoria/accesorios">Asccesorios</Nav.Link>
             </Link>
-            {/* <Nav.Link href="#">Productos de Limpieza</Nav.Link> */}
           </Nav>
           <CartWidget />
         </Container>

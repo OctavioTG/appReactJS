@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartContextProvider";
 import { Button, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Cart() {
   const [cart, setCart] = useContext(CartContext);
-  console.log(cart);
 
   function removeItem(id) {
     const newItem = cart.filter(({ item }) => item.id !== id);
@@ -53,7 +53,9 @@ function Cart() {
         ))}
         <div>
         <Button className="m-3" onClick={clearCart}>Vaciar Carrito</Button>
+        <Link to={"/checkout"}>
         <Button>CHECKOUT</Button>
+        </Link>
         </div>
       </div>
       <div className="divCart border m-3 d-flex">
