@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContextProvider";
 
 function CartWidget() {
-  const [cart] = useContext(CartContext);
+  const {cart} = useContext(CartContext);
 
   return (
     <>

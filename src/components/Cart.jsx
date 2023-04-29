@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { CartContext } from "../context/CartContextProvider";
 import { Button, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import ItemCount from "./ItemCount";
 
 function Cart() {
-  const [cart, setCart] = useContext(CartContext);
+  const {cart, setCart} = useContext(CartContext);
 
   function removeItem(id) {
     const newItem = cart.filter(({ item }) => item.id !== id);
@@ -37,7 +38,6 @@ function Cart() {
     <>
       <div className="border m-3 d-flex flex-wrap">
         <h4 className="d-flex justify-content-center">PRODUCTOS:</h4>
-
         {cart.map(({ item, count }) => (
           <div className="m-3" key={item.id}>
             <Card style={{ width: "18rem" }}>
@@ -46,7 +46,8 @@ function Cart() {
                 <Card.Title>{item.nombre}</Card.Title>
                 <p>Unidades: {count}</p>
                 <p>SubTotal: ${getSubtotal(count, item.precio)}</p>
-                <Button onClick={() => removeItem(item.id)}>Eliminar</Button>
+                <Button className="m-1" onClick={() => removeItem(item.id)}>Eliminar</Button>
+                <ItemCount item={item}/>
               </Card.Body>
             </Card>
           </div>

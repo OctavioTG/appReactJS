@@ -1,6 +1,5 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import { useParams } from "react-router-dom";
 import ItemCount from "./ItemCount";
 
 function ItemDetail({ prod, id }) {
@@ -15,7 +14,7 @@ function ItemDetail({ prod, id }) {
             <Card.Text>{prod.detalles}</Card.Text>
             <p>${prod.precio}</p>
             <p>Stock: {prod.stock}</p>
-            <ItemCount item={prod} />
+            <ItemCount item={prod} id={id} />
           </Card.Body>
         </Card>
       </div>

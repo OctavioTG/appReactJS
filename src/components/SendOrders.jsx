@@ -4,7 +4,7 @@ import { CartContext } from "../context/CartContextProvider";
 import { Card } from "react-bootstrap";
 
 function SendOrders() {
-  const [cart] = useContext(CartContext);
+  const {cart} = useContext(CartContext);
   const [orderId, setOrderId] = useState(null);
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
@@ -20,6 +20,7 @@ function SendOrders() {
   const order = {
     nombre,
     email,
+    cart
   };
 
   const ordersCollection = collection(db, "order");
